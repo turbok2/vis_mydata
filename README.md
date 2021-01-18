@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## my data
 
 You can use the [editor on GitHub](https://github.com/turbok2/vis_mydata/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
