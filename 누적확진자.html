@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_361693defd6442f098948f6cd0db7c21 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_361693defd6442f098948f6cd0db7c21" ></div>
+        
+</body>
+<script>    
+    
+            var map_361693defd6442f098948f6cd0db7c21 = L.map(
+                "map_361693defd6442f098948f6cd0db7c21",
+                {
+                    center: [36.48001214, 127.2890691],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fd47aab4ff6f4896b63c67dbd701756c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_361693defd6442f098948f6cd0db7c21);
+        
+    
+            var circle_57860d5033bf4939a5885d2835ddca9a = L.circle(
+                [33.4889944, 126.4982702],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 260, "stroke": true, "weight": 3}
+            ).addTo(map_361693defd6442f098948f6cd0db7c21);
+        
+    
+        var popup_9d44c82a5c14472398e7b42863d34291 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_232082f591f9498e895689c5fb2e8227 = $(`<div id="html_232082f591f9498e895689c5fb2e8227" style="width: 100.0%; height: 100.0%;">누적확진자:26</div>`)[0];
+            popup_9d44c82a5c14472398e7b42863d34291.setContent(html_232082f591f9498e895689c5fb2e8227);
+        
+
+        circle_57860d5033bf4939a5885d2835ddca9a.bindPopup(popup_9d44c82a5c14472398e7b42863d34291)
+        ;
+
+        
+    
+    
+            circle_57860d5033bf4939a5885d2835ddca9a.bindTooltip(
+                `<div>
+                     제주특별자치도
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cf97e8f0f6b848c794746ef6d3b8d38b = L.circle(
+                [35.8203294, 127.108784],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 390, "stroke": true, "weight": 3}
+            ).addTo(map_361693defd6442f098948f6cd0db7c21);
+        
+    
+        var popup_9fcacb5553c34238bec69d08aaa072cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7c6da8681b74f5e95d074eef9c77638 = $(`<div id="html_b7c6da8681b74f5e95d074eef9c77638" style="width: 100.0%; height: 100.0%;">누적확진자:39</div>`)[0];
+            popup_9fcacb5553c34238bec69d08aaa072cf.setContent(html_b7c6da8681b74f5e95d074eef9c77638);
+        
+
+        circle_cf97e8f0f6b848c794746ef6d3b8d38b.bindPopup(popup_9fcacb5553c34238bec69d08aaa072cf)
+        ;
+
+        
+    
+    
+            circle_cf97e8f0f6b848c794746ef6d3b8d38b.bindTooltip(
+                `<div>
+                     전라북도
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5aacc3aef650462382963260036c06e1 = L.circle(
+                [34.8161102, 126.4631714],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 390, "stroke": true, "weight": 3}
+            ).addTo(map_361693defd6442f098948f6cd0db7c21);
+        
+    
+        var popup_f344eea239bd4b81a9aa298be3ad8cae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4074086397f4464c8d0c0f58cd072b19 = $(`<div id="html_4074086397f4464c8d0c0f58cd072b19" style="width: 100.0%; height: 100.0%;">누적확진자:39</div>`)[0];
+            popup_f344eea239bd4b81a9aa298be3ad8cae.setContent(html_4074086397f4464c8d0c0f58cd072b19);
+        
+
+        circle_5aacc3aef650462382963260036c06e1.bindPopup(popup_f344eea239bd4b81a9aa298be3ad8cae)
+        ;
+
+        
+    
+    
+            circle_5aacc3aef650462382963260036c06e1.bindTooltip(
+                `<div>
+                     전라남도
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8a695c0691f34617808fd036e0e758ef = L.circle(
+                [36.4800121, 127.2890691],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 500, "stroke": true, "weight": 3}
+            ).addTo(map_361693defd6442f098948f6cd0db7c21);
+        
+    
+        var popup_f2df938dd5be4d29aac73bf5a6dd9dab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b80cd7d42324a2da70c0e8e1de5f246 = $(`<div id="html_3b80cd7d42324a2da70c0e8e1de5f246" style="width: 100.0%; height: 100.0%;">누적확진자:50</div>`)[0];
+            popup_f2df938dd5be4d29aac73bf5a6dd9dab.setContent(html_3b80cd7d42324a2da70c0e8e1de5f246);
+        
+
+        circle_8a695c0691f34617808fd036e0e758ef.bindPopup(popup_f2df938dd5be4d29aac73bf5a6dd9dab)
+        ;
+
+        
+    
+    
+            circle_8a695c0691f34617808fd036e0e758ef.bindTooltip(
+                `<div>
+                     세종특별자치시
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_bf12673acbe44e9e986fa3d0d95d526b = L.circle(
+                [35.5394773, 129.3112994],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 590, "stroke": true, "weight": 3}
+            ).addTo(map_361693defd6442f098948f6cd0db7c21);
+        
+    
+        var popup_b0f26870850540929aeae3f5362dc7a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e3e7a8ad8824c50848c90acb04e4a0e = $(`<div id="html_9e3e7a8ad8824c50848c90acb04e4a0e" style="width: 100.0%; height: 100.0%;">누적확진자:59</div>`)[0];
+            popup_b0f26870850540929aeae3f5362dc7a1.setContent(html_9e3e7a8ad8824c50848c90acb04e4a0e);
+        
+
+        circle_bf12673acbe44e9e986fa3d0d95d526b.bindPopup(popup_b0f26870850540929aeae3f5362dc7a1)
+        ;
+
+        
+    
+    
+            circle_bf12673acbe44e9e986fa3d0d95d526b.bindTooltip(
+                `<div>
+                     울산광역시
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_bfb4e162f082491ca6ce640bc0863282 = L.circle(
+                [37.885399, 127.72975],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 750, "stroke": true, "weight": 3}
+            ).addTo(map_361693defd6442f098948f6cd0db7c21);
+        
+    
+        var popup_4d80af6e5ad7455e9730e9882380b8e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83b138f6e27f4c64a0f6ab3497ab7e97 = $(`<div id="html_83b138f6e27f4c64a0f6ab3497ab7e97" style="width: 100.0%; height: 100.0%;">누적확진자:75</div>`)[0];
+            popup_4d80af6e5ad7455e9730e9882380b8e4.setContent(html_83b138f6e27f4c64a0f6ab3497ab7e97);
+        
+
+        circle_bfb4e162f082491ca6ce640bc0863282.bindPopup(popup_4d80af6e5ad7455e9730e9882380b8e4)
+        ;
+
+        
+    
+    
+            circle_bfb4e162f082491ca6ce640bc0863282.bindTooltip(
+                `<div>
+                     강원도
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f791007117724aff8b00e798e6b8fcb5 = L.circle(
+                [36.6353868, 127.4914284],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 800, "stroke": true, "weight": 3}
+            ).addTo(map_361693defd6442f098948f6cd0db7c21);
+        
+    
+        var popup_d12f16248a9c4a09bcb10182e3d160f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4c46269b9394862a9878f3022e70134 = $(`<div id="html_e4c46269b9394862a9878f3022e70134" style="width: 100.0%; height: 100.0%;">누적확진자:80</div>`)[0];
+            popup_d12f16248a9c4a09bcb10182e3d160f2.setContent(html_e4c46269b9394862a9878f3022e70134);
+        
+
+        circle_f791007117724aff8b00e798e6b8fcb5.bindPopup(popup_d12f16248a9c4a09bcb10182e3d160f2)
+        ;
+
+        
+    
+    
+            circle_f791007117724aff8b00e798e6b8fcb5.bindTooltip(
+                `<div>
+                     충청북도
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5ccf983da8a342b594c3b6fdc7e429c8 = L.circle(
+                [35.2377974, 128.6919403],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1650, "stroke": true, "weight": 3}
+            ).addTo(map_361693defd6442f098948f6cd0db7c21);
+        
+    
+        var popup_6529ea29545a4a81ae2764fcafbb0a9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fcf5f75fa10545c9b875294a398489a5 = $(`<div id="html_fcf5f75fa10545c9b875294a398489a5" style="width: 100.0%; height: 100.0%;">누적확진자:165</div>`)[0];
+            popup_6529ea29545a4a81ae2764fcafbb0a9f.setContent(html_fcf5f75fa10545c9b875294a398489a5);
+        
+
+        circle_5ccf983da8a342b594c3b6fdc7e429c8.bindPopup(popup_6529ea29545a4a81ae2764fcafbb0a9f)
+        ;
+
+        
+    
+    
+            circle_5ccf983da8a342b594c3b6fdc7e429c8.bindTooltip(
+                `<div>
+                     경상남도
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_57d7003938914386a263b48150f065ec = L.circle(
+                [36.5759477, 128.5056462],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1660, "stroke": true, "weight": 3}
+            ).addTo(map_361693defd6442f098948f6cd0db7c21);
+        
+    
+        var popup_4f58826d1d094308aef17e529729543a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49d3aa830a8a4f6184888b035d33649f = $(`<div id="html_49d3aa830a8a4f6184888b035d33649f" style="width: 100.0%; height: 100.0%;">누적확진자:166</div>`)[0];
+            popup_4f58826d1d094308aef17e529729543a.setContent(html_49d3aa830a8a4f6184888b035d33649f);
+        
+
+        circle_57d7003938914386a263b48150f065ec.bindPopup(popup_4f58826d1d094308aef17e529729543a)
+        ;
+
+        
+    
+    
+            circle_57d7003938914386a263b48150f065ec.bindTooltip(
+                `<div>
+                     대전광역시
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_de89e329217c4e22aac1ebfcea5797d4 = L.circle(
+                [35.179816, 129.0750223],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1740, "stroke": true, "weight": 3}
+            ).addTo(map_361693defd6442f098948f6cd0db7c21);
+        
+    
+        var popup_46d63eb761074fa9b1889d570281b8f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bac185fb37884f109919756004db9ab2 = $(`<div id="html_bac185fb37884f109919756004db9ab2" style="width: 100.0%; height: 100.0%;">누적확진자:174</div>`)[0];
+            popup_46d63eb761074fa9b1889d570281b8f6.setContent(html_bac185fb37884f109919756004db9ab2);
+        
+
+        circle_de89e329217c4e22aac1ebfcea5797d4.bindPopup(popup_46d63eb761074fa9b1889d570281b8f6)
+        ;
+
+        
+    
+    
+            circle_de89e329217c4e22aac1ebfcea5797d4.bindTooltip(
+                `<div>
+                     부산광역시
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a9036d6ecdd14fa49663634377e594df = L.circle(
+                [36.659249, 126.672908],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1900, "stroke": true, "weight": 3}
+            ).addTo(map_361693defd6442f098948f6cd0db7c21);
+        
+    
+        var popup_cf448aff6ec04dff94b5bfc275144d05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7117be71e5354b69a54388a9a639d52e = $(`<div id="html_7117be71e5354b69a54388a9a639d52e" style="width: 100.0%; height: 100.0%;">누적확진자:190</div>`)[0];
+            popup_cf448aff6ec04dff94b5bfc275144d05.setContent(html_7117be71e5354b69a54388a9a639d52e);
+        
+
+        circle_a9036d6ecdd14fa49663634377e594df.bindPopup(popup_cf448aff6ec04dff94b5bfc275144d05)
+        ;
+
+        
+    
+    
+            circle_a9036d6ecdd14fa49663634377e594df.bindTooltip(
+                `<div>
+                     충청남도
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6ef91bfa8b034029b5f13acef1c6430c = L.circle(
+                [35.160032, 126.851338],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2080, "stroke": true, "weight": 3}
+            ).addTo(map_361693defd6442f098948f6cd0db7c21);
+        
+    
+        var popup_85ec5a2db903449190cc9d537e996802 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_176296d5ced84f5fb4c03075ae946210 = $(`<div id="html_176296d5ced84f5fb4c03075ae946210" style="width: 100.0%; height: 100.0%;">누적확진자:208</div>`)[0];
+            popup_85ec5a2db903449190cc9d537e996802.setContent(html_176296d5ced84f5fb4c03075ae946210);
+        
+
+        circle_6ef91bfa8b034029b5f13acef1c6430c.bindPopup(popup_85ec5a2db903449190cc9d537e996802)
+        ;
+
+        
+    
+    
+            circle_6ef91bfa8b034029b5f13acef1c6430c.bindTooltip(
+                `<div>
+                     광주광역시
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3c86f2fbf7f5436f8c0e9749fd77ad8a = L.circle(
+                [37.4562563, 126.7047029],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3860, "stroke": true, "weight": 3}
+            ).addTo(map_361693defd6442f098948f6cd0db7c21);
+        
+    
+        var popup_3149c01d8c8541c784323aa2453dd307 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_714dbb87593d4e7b9017dad8ce6dc977 = $(`<div id="html_714dbb87593d4e7b9017dad8ce6dc977" style="width: 100.0%; height: 100.0%;">누적확진자:386</div>`)[0];
+            popup_3149c01d8c8541c784323aa2453dd307.setContent(html_714dbb87593d4e7b9017dad8ce6dc977);
+        
+
+        circle_3c86f2fbf7f5436f8c0e9749fd77ad8a.bindPopup(popup_3149c01d8c8541c784323aa2453dd307)
+        ;
+
+        
+    
+    
+            circle_3c86f2fbf7f5436f8c0e9749fd77ad8a.bindTooltip(
+                `<div>
+                     인천광역시
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2121f1d963c54dd198b2f3925dc65bfc = L.circle(
+                [36.5759477, 128.5056462],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14050, "stroke": true, "weight": 3}
+            ).addTo(map_361693defd6442f098948f6cd0db7c21);
+        
+    
+        var popup_e837dd36f20d4a169250119e0b486ac8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a7ccd1560014dea841f31b39d646433 = $(`<div id="html_3a7ccd1560014dea841f31b39d646433" style="width: 100.0%; height: 100.0%;">누적확진자:1405</div>`)[0];
+            popup_e837dd36f20d4a169250119e0b486ac8.setContent(html_3a7ccd1560014dea841f31b39d646433);
+        
+
+        circle_2121f1d963c54dd198b2f3925dc65bfc.bindPopup(popup_e837dd36f20d4a169250119e0b486ac8)
+        ;
+
+        
+    
+    
+            circle_2121f1d963c54dd198b2f3925dc65bfc.bindTooltip(
+                `<div>
+                     경상북도
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_04ad00b57f3348b3a779d476bc52e401 = L.circle(
+                [37.2749385, 127.0086892],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15750, "stroke": true, "weight": 3}
+            ).addTo(map_361693defd6442f098948f6cd0db7c21);
+        
+    
+        var popup_a16b2cbff80542979841cbb3277dbbb5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb696879606f4c07b17ff99c4d4cdfde = $(`<div id="html_cb696879606f4c07b17ff99c4d4cdfde" style="width: 100.0%; height: 100.0%;">누적확진자:1575</div>`)[0];
+            popup_a16b2cbff80542979841cbb3277dbbb5.setContent(html_cb696879606f4c07b17ff99c4d4cdfde);
+        
+
+        circle_04ad00b57f3348b3a779d476bc52e401.bindPopup(popup_a16b2cbff80542979841cbb3277dbbb5)
+        ;
+
+        
+    
+    
+            circle_04ad00b57f3348b3a779d476bc52e401.bindTooltip(
+                `<div>
+                     경기도
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_bee8ef2f1e3649168e36181887c938f2 = L.circle(
+                [37.5666103, 126.9783882],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16270, "stroke": true, "weight": 3}
+            ).addTo(map_361693defd6442f098948f6cd0db7c21);
+        
+    
+        var popup_c5fa1cd4152049dfadf300d99ee3d46d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd88357cd2c44550a00ca33e2345197a = $(`<div id="html_bd88357cd2c44550a00ca33e2345197a" style="width: 100.0%; height: 100.0%;">누적확진자:1627</div>`)[0];
+            popup_c5fa1cd4152049dfadf300d99ee3d46d.setContent(html_bd88357cd2c44550a00ca33e2345197a);
+        
+
+        circle_bee8ef2f1e3649168e36181887c938f2.bindPopup(popup_c5fa1cd4152049dfadf300d99ee3d46d)
+        ;
+
+        
+    
+    
+            circle_bee8ef2f1e3649168e36181887c938f2.bindTooltip(
+                `<div>
+                     서울특별시
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_85d454ebf76243a886d89ba650080ced = L.circle(
+                [35.87139, 128.601763],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 69430, "stroke": true, "weight": 3}
+            ).addTo(map_361693defd6442f098948f6cd0db7c21);
+        
+    
+        var popup_110bb161fa944b43901e123c4163d0ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca8c3aee154342c69dfc3503053ef6fe = $(`<div id="html_ca8c3aee154342c69dfc3503053ef6fe" style="width: 100.0%; height: 100.0%;">누적확진자:6943</div>`)[0];
+            popup_110bb161fa944b43901e123c4163d0ec.setContent(html_ca8c3aee154342c69dfc3503053ef6fe);
+        
+
+        circle_85d454ebf76243a886d89ba650080ced.bindPopup(popup_110bb161fa944b43901e123c4163d0ec)
+        ;
+
+        
+    
+    
+            circle_85d454ebf76243a886d89ba650080ced.bindTooltip(
+                `<div>
+                     대구광역시
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
