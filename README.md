@@ -3,3 +3,6 @@
  - [나의 시각화 프로젝트1](https://turbok2.github.io/vis_mydata/mydata.html)
  - [나의 시각화 프로젝트2](https://turbok2.github.io/vis_mydata/plot.html)
  - [나의 시각화 프로젝트3](https://turbok2.github.io/vis_mydata/example.html)
+<p align="center">
+  <img src="worldstock.jpg" width="350" title="world stock">
+</p>
